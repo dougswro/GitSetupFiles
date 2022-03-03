@@ -1152,3 +1152,149 @@ vim authorized_keys
 vim config
 #1646263468
 exit
+#1646263631
+git
+#1646263637
+apt install git
+#1646263778
+vim newprograms 
+#1646263797
+git
+#1646263799
+git init
+#1646263812
+vim .git
+#1646263837
+cd .git
+#1646263852
+vim config
+#1646264050
+cd ..
+#1646264077
+git commit -a
+#1646264084
+git add *
+#1646264101
+git commit -a -m "push from proxmox"
+#1646264117
+git push merge
+#1646264121
+git push
+#1646264143
+git push --set-upstream origin master
+#1646264167
+cd .git
+#1646264174
+cp config ..
+#1646264176
+cd ..
+#1646264180
+vim config
+#1646264186
+git push
+#1646264204
+service restart git
+#1646264210
+service git restart
+#1646264250
+git push --set-upstream origin master
+#1646264278
+git pull
+#1646264325
+git branch --set-upstream-to=origin/<branch> master
+#1646264334
+git branch --set-upstream-to=origin/.ssh master
+#1646264354
+git pull
+#1646264361
+git branch
+#1646264366
+git push
+#1646264374
+git push --set-upstream origin master
+#1646264392
+git push --help
+#1646264502
+git push --set-upstream origin master -F
+#1646264511
+git push -F --set-upstream origin master
+#1646264515
+git push -f --set-upstream origin master
+#1646264534
+git repo
+#1646264539
+git remote
+#1646264543
+git branch
+#1646264547
+git repository
+#1646264550
+git pull
+#1646264583
+git commit -a -m 
+#1646264586
+git commit -a -m hsh
+#1646264593
+git add --all
+#1646264611
+git commit -a -m 'push from prox'
+#1646264620
+git push
+#1646264630
+git pull
+#1646264633
+git commit
+#1646264639
+git commit -a
+#1646264642
+git push
+#1646264652
+git config
+#1646264659
+vim congif
+#1646264667
+vim vonfig
+#1646264672
+vim config
+#1646264760
+git config credential.helper store
+#1646264780
+git pull https://github.com/dougswro/.ssh.git
+#1646264787
+git config credential.helper store
+#1646264791
+git push
+#1646265543
+ls -a
+#1646265550
+service bash restart
+#1646265556
+exit
+#1646268426
+cd .ssh
+#1646268470
+vim authorized_keys 
+#1646268614
+ls -a
+#1646268618
+git push
+#1646268641
+git stage
+#1646268651
+git add *
+#1646268656
+git push
+#1646268659
+git pull
+#1646268679
+cd ..
+#1646268688
+ls -a
+#1646268693
+git add *
+#1646268696
+git push
+#1646268707
+cd .ssh
+#1646268711
+cd ..

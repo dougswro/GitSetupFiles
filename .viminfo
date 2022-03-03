@@ -14,12 +14,12 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1646264182,,"q"
-:w
-|2,0,1646264029,,"w"
 :q!
-|2,0,1646263833,,"q!"
+|2,0,1646271885,,"q!"
+:q
+|2,0,1646271883,,"q"
+:w
+|2,0,1646271819,,"w"
 :W
 |2,0,1644974700,,"W"
 :`
@@ -42,65 +42,19 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	
-	if [ -n "$force_color_prompt" ]; then
-	    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	        # We have color support; assume it's compliant with Ecma-48
-	        # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	        # a case would tend to support setf rather than setaf.)
-	        color_prompt=yes
-	    else
-	        color_prompt=
-	    fi
-	fi
-	
-	if [ "$color_prompt" = yes ]; then
-	    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033>'
-	else
-	    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-	fi
-	unset color_prompt force_color_prompt
-	
-	# If this is an xterm set the title to user@host:dir
-	case "$TERM" in
-	xterm*|rxvt*)
-	    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-	    ;;
-	*)
-	    ;;
-	esac
-	
-	# enable color support of ls and also add handy aliases
-	if [ -x /usr/bin/dircolors ]; then
-	    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-	    alias l='ls -a --color=auto'
-	    alias dir='dir --color=auto'
-	    alias vdir='vdir --color=auto'
-	
-	    alias grep='grep --color=auto'
-	    alias fgrep='fgrep --color=auto'
-	    alias egrep='egrep --color=auto'
-	fi
-	
-	# Alias definitions.
-	# You may want to put all your additions into a separate file like
-	# ~/.bash_aliases, instead of adding them here directly.
-	# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-	
-	if [ -f ~/.bash_aliases ]; then
-	    . ~/.bash_aliases
-	fi
-	
-	# colored GCC warnings and errors
-|3,1,0,1,50,0,1646263829,"","if [ -n \"$force_color_prompt\" ]; then","    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then","        # We have color support; assume it's compliant with Ecma-48","        # (ISO/IEC-6429). (Lack of such support is extremely rare, and such","        # a case would tend to support setf rather than setaf.)","        color_prompt=yes","    else","        color_prompt=","    fi","fi","",>38
-|<"if [ \"$color_prompt\" = yes ]; then","    PS1='${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033>'","else","    PS1='${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$ '","fi","unset color_prompt force_color_prompt","","# If this is an xterm set the title to user@host:dir","case \"$TERM\" in","xterm*|rxvt*)","    PS1=\"\\[\\e]0;${debian_chroot:+($debian_chroot)}\\u@\\h: \\w\\a\\]$PS1\"","    ;;","*)","    ;;","esac","",>57
-|<"# enable color support of ls and also add handy aliases","if [ -x /usr/bin/dircolors ]; then","    test -r ~/.dircolors && eval \"$(dircolors -b ~/.dircolors)\" || eval \"$(dircolors -b)\"","    alias l='ls -a --color=auto'","    alias dir='dir --color=auto'","    alias vdir='vdir --color=auto'","","    alias grep='grep --color=auto'","    alias fgrep='fgrep --color=auto'","    alias egrep='egrep --color=auto'","fi","","# Alias definitions.",>68
-|<"# You may want to put all your additions into a separate file like","# ~/.bash_aliases, instead of adding them here directly.","# See /usr/share/doc/bash-doc/examples in the bash-doc package.","","if [ -f ~/.bash_aliases ]; then","    . ~/.bash_aliases","fi","","# colored GCC warnings and errors"
+"0	LINE	0
+	572
+<ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCoXLLQNrQM3HsBGR7peQTOcBndYC5F8l8OS9WjzEMkdxmQk2ApL4wtn1ioji7CyU6ae9H3NzjBP6TnjdK5iyv89HBa17ZmKrei+gY8fWYwB0OIMZvIgL7iV29l+ZSm92PK1lktBJSw2t4QeMA+hd4hJXrCnh9K7ayWo4XHzCZrBsqj1KN7METQ3TeFBxKWvFxmW7uRM+JKHkyeQcC9virCv0Joq2f68GP6YZqTfnmhCE35ExlGKC6FF6x/pmX+H3tjZLEEJ9K4MR0GDsSEg95ZFdu4C7eOm3OKdt/E8WjiFwQVYG6XlHKD9CErqmrcschMW9JsV5kXLcdfRZKhruMAvN3DYqQZRes1tHDH1FJJsYRWcJIWubzQRRpQqyynC9ZuV15x+69/bJE3n1gVWbe6J4x//ensdJrOa+JaBXCiJ8Olf2MnOe/5qaa+ponyre5EgA1aWfcaeleE8F5qzHy9s5eOKbwLDKluPli8ot+HoDfSj9Y3zaNb+eiT8aYRDa0= doug@Dougs-XPS15
+|3,0,0,1,1,0,1646271817,>571
+|<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCoXLLQNrQM3HsBGR7peQTOcBndYC5F8l8OS9WjzEMkdxmQk2ApL4wtn1ioji7CyU6ae9H3NzjBP6TnjdK5iyv89HBa17ZmKrei+gY8fWYwB0OIMZvIgL7iV29l+ZSm92PK1lktBJSw2t4QeMA+hd4hJXrCnh9K7ayWo4XHzCZrBsqj1KN7METQ3TeFBxKWvFxmW7uRM+JKHkyeQcC9virCv0Joq2f68GP6YZqTfnmhCE35ExlGKC6FF6x/pmX+H3tjZLEEJ9K4MR0GDsSEg95ZFdu4C7eOm3OKdt/E8WjiFwQVYG6XlHKD9CErqmrcschMW9JsV5kXLcdfRZKhruMAvN3DYqQZRes1tHDH1FJJsYRWcJIWubzQRRpQqyynC9ZuV15x+69/bJE3n1gVWbe6J4x//ensdJrOa+JaBXCiJ8Olf2MnOe/5qaa+ponyre5EgA
+|<1aWfcaeleE8F5qzHy9s5eOKbwLDKluPli8ot+HoDfSj9Y3zaNb+eiT8aYRDa0= doug@Dougs-XPS15"
 "1	LINE	0
 	
-|3,0,1,1,1,0,1645199151,""
-"2	CHAR	0
+|3,0,1,1,1,0,1646271881,""
+"2	LINE	0
+	
+|3,0,2,1,1,0,1645199151,""
+"3	CHAR	0
 	
 	396
 <ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDvyx2tLZ5+OGL+n9Elz/dBv2tl1HEVzyrwczuPNYpYqGDXL76yp5krUyYCP0iPqH0Z+tzdp3z5LCQNv8kSbOW0TXbwU9nEwhUqSE+zCgD+GXUTvVBSPNfintzMXC0IMAyBpMFfyN9MkgWkkTUQXl3179hx4oxuzg7W4sPi/89whKT8XbKmXQzXAiy2p1oh+ob96XnRHnaahD1GQxih7Sdf06J7u9ZOPHltkbQfCPtPMhQtQjGU04uqXIYYz5m0JLlTtVHHFpBs+v5Fi8ddDz4dZr8b66i4dAbnH3JjxgXuDTdtkAQqPPilmAkArZKvS+vpQWzHT5AMViNunYTgW073 root@proxmox
@@ -110,263 +64,303 @@ $
 	572
 <ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTWTlPa4NIYpg+pdVJihPa3Mlv3ACZCSt5XvEVPukvYwPLFZ7v7RZelY0QeTVHfbxvm7a0ZbY7exrJ+lf0xuPpv1FitYWpZm4T5TLFwc+SU58esTb9I54qC/6F+hbSHXBBX3X8h5KOZQuh9XYNmY0IojAuG3vaiPcRzqct6yr/aUMYXsc9+tataN24Hl4kpBr/7wh5CZy0peUK63glZT/kYInRx2AFiwohLGcDVcQGVE/N8jUPH2uXhaEQSOBRQ30ZVYrmS/ULyf6Qhq+MB2z83zlg0R7nNPo7+/zinQmU2WT4Pnx/1Rux3vF2aNNtBUxZtRsIfD5xA6BymrjJ7Cb24u7J9yUoxlyjcVPDhW72PM3QT2FZSlhojiP/ryOhQQrVF3YWiv1PuNpwxAwXNQfiS2o9ZFO/U7WMn9MF2GVix5lb1v5E6DDpc5g0GlUi3VAqAgz3HkVhWgjRbjsf6UAbtzYfmxAbN8pHaCmPu+4BrcKiRySj+K5EFA+MlZBlAB8= doug@Dougs-XPS15
 	
-|3,0,2,0,7,0,1645199146,"","ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDvyx2tLZ5+OGL+n9Elz/dBv2tl1HEVzyrwczuPNYpYqGDXL76yp5krUyYCP0iPqH0Z+tzdp3z5LCQNv8kSbOW0TXbwU9nEwhUqSE+zCgD+GXUTvVBSPNfintzMXC0IMAyBpMFfyN9MkgWkkTUQXl3179hx4oxuzg7W4sPi/89whKT8XbKmXQzXAiy2p1oh+ob96XnRHnaahD1GQxih7Sdf06J7u9ZOPHltkbQfCPtPMhQtQjGU04uqXIYYz5m0JLlTtVHHFpBs+v5Fi8ddDz4dZr8b66i4dAbnH3JjxgXuDTdtkAQqPPilmAkArZKvS+vpQWzHT5AMViNunYTgW073 root@proxmox",>102
+|3,0,3,0,7,0,1645199146,"","ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDvyx2tLZ5+OGL+n9Elz/dBv2tl1HEVzyrwczuPNYpYqGDXL76yp5krUyYCP0iPqH0Z+tzdp3z5LCQNv8kSbOW0TXbwU9nEwhUqSE+zCgD+GXUTvVBSPNfintzMXC0IMAyBpMFfyN9MkgWkkTUQXl3179hx4oxuzg7W4sPi/89whKT8XbKmXQzXAiy2p1oh+ob96XnRHnaahD1GQxih7Sdf06J7u9ZOPHltkbQfCPtPMhQtQjGU04uqXIYYz5m0JLlTtVHHFpBs+v5Fi8ddDz4dZr8b66i4dAbnH3JjxgXuDTdtkAQqPPilmAkArZKvS+vpQWzHT5AMViNunYTgW073 root@proxmox",>102
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTWTlPa4NIYpg+pdVJihPa3Mlv3ACZCSt5XvEVPukvYwPLFZ7v7RZelY0QeTV>","","",>571
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTWTlPa4NIYpg+pdVJihPa3Mlv3ACZCSt5XvEVPukvYwPLFZ7v7RZelY0QeTVHfbxvm7a0ZbY7exrJ+lf0xuPpv1FitYWpZm4T5TLFwc+SU58esTb9I54qC/6F+hbSHXBBX3X8h5KOZQuh9XYNmY0IojAuG3vaiPcRzqct6yr/aUMYXsc9+tataN24Hl4kpBr/7wh5CZy0peUK63glZT/kYInRx2AFiwohLGcDVcQGVE/N8jUPH2uXhaEQSOBRQ30ZVYrmS/ULyf6Qhq+MB2z83zlg0R7nNPo7+/zinQmU2WT4Pnx/1Rux3vF2aNNtBUxZtRsIfD5xA6BymrjJ7Cb24u7J9yUoxlyjcVPDhW72PM3QT2FZSlhojiP/ryOhQQrVF3YWiv1PuNpwxAwXNQfiS2o9ZFO/U7WMn9MF2GVix5lb1v5E6DDpc5g0GlUi3VAqAg
 |<z3HkVhWgjRbjsf6UAbtzYfmxAbN8pHaCmPu+4BrcKiRySj+K5EFA+MlZBlAB8= doug@Dougs-XPS15",""
-"3	LINE	0
-	allowpublickey=yes
-|3,0,3,1,1,0,1644973660,"allowpublickey=yes"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1644972758,""
+	allowpublickey=yes
+|3,0,4,1,1,0,1644973660,"allowpublickey=yes"
 "5	LINE	0
-	fi
-|3,0,5,1,1,0,1644972757,"fi"
-"6	LINE	0
-	    . ~/.bash_aliases
-|3,0,6,1,1,0,1644972756,"    . ~/.bash_aliases"
-"7	LINE	0
-	if [ -f ~/.bash_aliases ]; then
-|3,0,7,1,1,0,1644972756,"if [ -f ~/.bash_aliases ]; then"
-"8	LINE	0
 	
-|3,0,8,1,1,0,1644972755,""
+|3,0,5,1,1,0,1644972758,""
+"6	LINE	0
+	fi
+|3,0,6,1,1,0,1644972757,"fi"
+"7	LINE	0
+	    . ~/.bash_aliases
+|3,0,7,1,1,0,1644972756,"    . ~/.bash_aliases"
+"8	LINE	0
+	if [ -f ~/.bash_aliases ]; then
+|3,0,8,1,1,0,1644972756,"if [ -f ~/.bash_aliases ]; then"
 "9	LINE	0
-	# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-|3,0,9,1,1,0,1644972755,"# See /usr/share/doc/bash-doc/examples in the bash-doc package."
-"-	CHAR	0
-	 
-|3,0,36,0,1,0,1645172856," "
+	
+|3,0,9,1,1,0,1644972755,""
+""-	CHAR	0
+	s
+|3,1,36,0,1,0,1646271882,"s"
 
 # File marks:
-'0  1  0  ~/config
-|4,48,1,0,1646264182,"~/config"
-'1  7  42  ~/.git/config
-|4,49,7,42,1646264039,"~/.git/config"
-'2  9  1  ~/.git
-|4,50,9,1,1646263833,"~/.git"
-'3  1  0  ~/newprograms
-|4,51,1,0,1646263793,"~/newprograms"
-'4  1  90  ~/.ssh/config
-|4,52,1,90,1646263457,"~/.ssh/config"
-'5  1  0  ~/.ssh/authorized_keys
-|4,53,1,0,1646263347,"~/.ssh/authorized_keys"
-'6  1  0  ~/.ssh/authorized_keys
-|4,54,1,0,1646263328,"~/.ssh/authorized_keys"
-'7  1  0  /etc/pve/priv/authorized_keys
-|4,55,1,0,1646263314,"/etc/pve/priv/authorized_keys"
-'8  1  0  ~/.ssh/id_rsa.pub
-|4,56,1,0,1646263240,"~/.ssh/id_rsa.pub"
-'9  29  30  ~/.ssh/id_rsa
-|4,57,29,30,1646263226,"~/.ssh/id_rsa"
+'0  3  0  ~/.sshaddto/authorized_keys
+|4,48,3,0,1646271885,"~/.sshaddto/authorized_keys"
+'1  1  1  ~/Homeassistant.pub
+|4,49,1,1,1646271836,"~/Homeassistant.pub"
+'2  5  0  ~/.sshaddto/authorized_keys
+|4,50,5,0,1646271801,"~/.sshaddto/authorized_keys"
+'3  5  0  ~/.sshaddto/authorized_keys
+|4,51,5,0,1646271801,"~/.sshaddto/authorized_keys"
+'4  1  0  ~/PfsenseADMIN.pub
+|4,52,1,0,1646271758,"~/PfsenseADMIN.pub"
+'5  2  27  ~/.sshaddto/authorized_keys
+|4,53,2,27,1646271730,"~/.sshaddto/authorized_keys"
+'6  2  27  ~/.sshaddto/authorized_keys
+|4,54,2,27,1646271730,"~/.sshaddto/authorized_keys"
+'7  2  27  ~/.sshaddto/authorized_keys
+|4,55,2,27,1646271730,"~/.sshaddto/authorized_keys"
+'8  2  27  ~/.sshaddto/authorized_keys
+|4,56,2,27,1646271730,"~/.sshaddto/authorized_keys"
+'9  1  0  ~/proxmox.pub
+|4,57,1,0,1646271671,"~/proxmox.pub"
 
 # Jumplist (newest first):
--'  1  0  ~/config
-|4,39,1,0,1646264182,"~/config"
--'  7  42  ~/.git/config
-|4,39,7,42,1646264039,"~/.git/config"
--'  7  42  ~/.git/config
-|4,39,7,42,1646264039,"~/.git/config"
--'  1  0  ~/.git/config
-|4,39,1,0,1646263852,"~/.git/config"
--'  1  0  ~/.git/config
-|4,39,1,0,1646263852,"~/.git/config"
--'  9  1  ~/.git
-|4,39,9,1,1646263833,"~/.git"
--'  9  1  ~/.git
-|4,39,9,1,1646263833,"~/.git"
--'  9  1  ~/.git
-|4,39,9,1,1646263833,"~/.git"
--'  9  1  ~/.git
-|4,39,9,1,1646263833,"~/.git"
--'  1  0  ~/newprograms
-|4,39,1,0,1646263793,"~/newprograms"
--'  1  0  ~/newprograms
-|4,39,1,0,1646263793,"~/newprograms"
--'  1  0  ~/newprograms
-|4,39,1,0,1646263793,"~/newprograms"
--'  1  0  ~/newprograms
-|4,39,1,0,1646263793,"~/newprograms"
--'  1  0  ~/newprograms
-|4,39,1,0,1646263793,"~/newprograms"
--'  1  0  ~/newprograms
-|4,39,1,0,1646263793,"~/newprograms"
--'  1  0  ~/newprograms
-|4,39,1,0,1646263793,"~/newprograms"
--'  1  0  ~/newprograms
-|4,39,1,0,1646263793,"~/newprograms"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  1  90  ~/.ssh/config
-|4,39,1,90,1646263457,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  3  23  ~/.ssh/config
-|4,39,3,23,1646263353,"~/.ssh/config"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263347,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
--'  1  0  ~/.ssh/authorized_keys
-|4,39,1,0,1646263328,"~/.ssh/authorized_keys"
+-'  3  0  ~/.sshaddto/authorized_keys
+|4,39,3,0,1646271885,"~/.sshaddto/authorized_keys"
+-'  5  0  ~/.sshaddto/authorized_keys
+|4,39,5,0,1646271850,"~/.sshaddto/authorized_keys"
+-'  1  1  ~/Homeassistant.pub
+|4,39,1,1,1646271836,"~/Homeassistant.pub"
+-'  1  1  ~/Homeassistant.pub
+|4,39,1,1,1646271836,"~/Homeassistant.pub"
+-'  5  0  ~/.sshaddto/authorized_keys
+|4,39,5,0,1646271801,"~/.sshaddto/authorized_keys"
+-'  5  0  ~/.sshaddto/authorized_keys
+|4,39,5,0,1646271801,"~/.sshaddto/authorized_keys"
+-'  2  27  ~/.sshaddto/authorized_keys
+|4,39,2,27,1646271765,"~/.sshaddto/authorized_keys"
+-'  2  27  ~/.sshaddto/authorized_keys
+|4,39,2,27,1646271765,"~/.sshaddto/authorized_keys"
+-'  2  27  ~/.sshaddto/authorized_keys
+|4,39,2,27,1646271765,"~/.sshaddto/authorized_keys"
+-'  1  0  ~/PfsenseADMIN.pub
+|4,39,1,0,1646271758,"~/PfsenseADMIN.pub"
+-'  1  0  ~/PfsenseADMIN.pub
+|4,39,1,0,1646271758,"~/PfsenseADMIN.pub"
+-'  1  0  ~/PfsenseADMIN.pub
+|4,39,1,0,1646271758,"~/PfsenseADMIN.pub"
+-'  1  0  ~/PfsenseADMIN.pub
+|4,39,1,0,1646271758,"~/PfsenseADMIN.pub"
+-'  1  0  ~/PfsenseADMIN.pub
+|4,39,1,0,1646271758,"~/PfsenseADMIN.pub"
+-'  1  0  ~/PfsenseADMIN.pub
+|4,39,1,0,1646271758,"~/PfsenseADMIN.pub"
+-'  1  0  ~/PfsenseADMIN.pub
+|4,39,1,0,1646271758,"~/PfsenseADMIN.pub"
+-'  1  0  ~/PfsenseADMIN.pub
+|4,39,1,0,1646271758,"~/PfsenseADMIN.pub"
+-'  2  27  ~/.sshaddto/authorized_keys
+|4,39,2,27,1646271730,"~/.sshaddto/authorized_keys"
+-'  2  27  ~/.sshaddto/authorized_keys
+|4,39,2,27,1646271730,"~/.sshaddto/authorized_keys"
+-'  2  27  ~/.sshaddto/authorized_keys
+|4,39,2,27,1646271730,"~/.sshaddto/authorized_keys"
+-'  2  27  ~/.sshaddto/authorized_keys
+|4,39,2,27,1646271730,"~/.sshaddto/authorized_keys"
+-'  1  0  ~/.sshaddto/authorized_keys
+|4,39,1,0,1646271716,"~/.sshaddto/authorized_keys"
+-'  1  0  ~/.sshaddto/authorized_keys
+|4,39,1,0,1646271716,"~/.sshaddto/authorized_keys"
+-'  1  0  ~/.sshaddto/authorized_keys
+|4,39,1,0,1646271716,"~/.sshaddto/authorized_keys"
+-'  1  0  ~/.sshaddto/authorized_keys
+|4,39,1,0,1646271716,"~/.sshaddto/authorized_keys"
+-'  1  0  ~/.sshaddto/authorized_keys
+|4,39,1,0,1646271716,"~/.sshaddto/authorized_keys"
+-'  1  0  ~/.sshaddto/authorized_keys
+|4,39,1,0,1646271716,"~/.sshaddto/authorized_keys"
+-'  1  0  ~/.sshaddto/authorized_keys
+|4,39,1,0,1646271716,"~/.sshaddto/authorized_keys"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  0  ~/proxmox.pub
+|4,39,1,0,1646271671,"~/proxmox.pub"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
+-'  1  24  ~/.ssh/authorized_keys
+|4,39,1,24,1646268518,"~/.ssh/authorized_keys"
 
 # History of marks within files (newest to oldest):
 
+> ~/.sshaddto/authorized_keys
+	*	1646271883	0
+	"	3	0
+	^	1	0
+	.	3	0
+	+	2	0
+	+	4	0
+	+	5	0
+	+	1	0
+	+	4	0
+	+	3	0
+
+> ~/Homeassistant.pub
+	*	1646271834	0
+	"	1	1
+	^	1	2
+	.	1	1
+	+	1	1
+
+> ~/PfsenseADMIN.pub
+	*	1646271756	0
+	"	1	0
+
+> ~/proxmox.pub
+	*	1646271669	0
+	"	1	0
+
+> ~/.ssh/authorized_keys
+	*	1646268516	0
+	"	1	24
+	.	1	0
+	+	1	0
+	+	1	568
+	+	1	0
+
 > ~/config
-	*	1646264180	0
+	*	1646264742	0
+	"	1	0
+
+> ~/vonfig
+	*	1646264667	0
+	"	1	0
+
+> ~/congif
+	*	1646264660	0
 	"	1	0
 
 > ~/.git/config
@@ -397,14 +391,6 @@ $
 	+	3	0
 	+	3	23
 	+	1	91
-
-> ~/.ssh/authorized_keys
-	*	1646263344	0
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	568
-	+	1	0
 
 > /etc/pve/priv/authorized_keys
 	*	1646263312	0
