@@ -6,4 +6,9 @@ This Repo serves to:
 
 2- install common CLI tools I use that aren't always on every dirsto
 
-3- 
+3- ?? Profit
+
+=====  Install  ====
+1- Into root directory in linux or Home directory on Linux
+
+2- Run setup.sh
