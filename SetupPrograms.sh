@@ -5,7 +5,7 @@ echo 'updating Distro first'
 apt update && apt dist-upgrade
 
 echo 'installing a few programs'
-apt --yes --force-yes install bpytop htop neofetch vim-gtk git tmux screen docker pip ifupdown2 adb curl python3
+apt --yes --force-yes install bpytop htop neofetch vim-gtk git tmux screen docker pip ifupdown2 adb curl python3 snapd flatpak dnsutils docker-compose aircrack-ng
 
 # move to directory to put git folder in correct place
 #echo 'cloning GIT repo to /GitSetupFiles/'
