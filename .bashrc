@@ -26,11 +26,20 @@ echo " "
 date "+%A %d %B %Y, %T"
 free -m | awk 'NR==2{printf "Memory Usage: %s/%sMB (%.2f%%)\n", $3,$2,$3*100/$2 }'
 df -h | awk '$NF=="/"{printf "Disk Usage: %d/%dGB (%s)\n", $3,$2,$5}'
-echo "Support - https://www.linuxliteos.com/forums/ (Right click, Open Link)"
-echo " "
+
+#### add flatpak bianaries to $PATH  ####
+export PATH="/var/lib/flatpak/exports/bin:/var/lib/flatpak/exports/share::/home/doug/.local/share/flatpak/exports/share:/home/doug/Code:/home/doug/Git_Files_General:$PATH"
+
 
 alias editbashrc='vim ~/.bashrc; source ~/.bashrc'
 alias update='sudo apt update; sudo apt upgrade -y'
 alias install='sudo apt install -y'
 alias remove='sudo apt remove -y'
+
+alias l='ls -a'
+alias ll='ls -lah'
+alias snap='sudo snap'
+alias hist='history'
+alias fstrim='sudo fsrtim -v'
+alias fdupes='fdupes -rdN'
 
