@@ -1,1 +1,3 @@
-/home/doug/.gitconfig
+[user]
+	email = dougs249@gmail.com
+	name = Doug
