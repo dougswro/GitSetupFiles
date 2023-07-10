@@ -1,0 +1,40 @@
+######  https://www.linuxuprising.com/2019/11/how-to-bind-mouse-buttons-to-keyboard.html
+#######################################################
+
+# To get the mouse button code(s), run this command:
+ xev | grep button
+ 
+ # Grab the keystrokes that we'll later send using a mouse button 
+ # xev | sed -ne '/^KeyPress/,/^$/p'
+ 	# xbindkeys -k
+ 	# ^^ is alternative to previous
+ 	
+ # Create the xbindkeys configuration (in ~/.xbindkeysrc) 
+    # Run for generated default
+      #  xbindkeys -d > ~/.xbindkeysrc
+      
+ killall xbindkeys
+ xbindkeys
+ 
+ ############
+ # Epic macros
+ ############
+ 
+ Refreash note
+ ctrl F1
+ 
+ Sign note
+ ctrl alt s
+ 
+ share note
+ ##
+ 
+ Close chart 
+ ctrl w
+ 
+ 
+      
+
+ 
+ 
+

@@ -1,0 +1,66 @@
+###  Mouse (Triathalon 720)
+
+left 
+ dn   state 0x10, button 1, same_screen YES
+ up   state 0x110, button 1, same_screen YES
+
+right
+ dn   state 0x10, button 3, same_screen YES
+ up   state 0x410, button 3, same_screen YES
+
+middle click
+ dn   state 0x10, button 2, same_screen YES
+ up   state 0x210, button 2, same_screen YES
+
+wheel left
+   state 0x10, button 6, same_screen YES
+   
+wheel right
+    state 0x10, button 7, same_screen YES
+    
+    
+Wheel scroll dn
+    state 0x10, button 5, same_screen YES
+    state 0x1010, button 5, same_screen YES
+    
+Wheel scroll up
+    state 0x10, button 4, same_screen YES
+    state 0x810, button 4, same_screen YES
+
+
+forward
+    state 0x10, button 9, same_screen YES
+    
+back
+    state 0x10, button 8, same_screen YES
+
+
+###  Keypresses
+
+control
+keycode 37 (keysym 0xffe3, Control_L)
+
+alt
+keycode 64 (keysym 0xffe9, Alt_L)
+
+shift
+keycode 50 (keysym 0xffe1, Shift_L)
+
+
+
+keycode 67 (keysym 0xffbe, F1)
+keycode 68 (keysym 0xffbf, F2
+keycode 69 (keysym 0xffc0, F3)
+keycode 70 (keysym 0xffc1, F4)
+keycode 76 (keysym 0xffc7, F10)
+keycode 95 (keysym 0xffc8, F11)
+keycode 96 (keysym 0xffc9, F12),
+
+keycode 39 (keysym 0x73, s)
+keycode 32 (keysym 0x6f, o)
+keycode 25 (keysym 0x77, w),
+keycode 38 (keysym 0x61, a)
+
+#### for more see ./list_of_LOTS_of_keys 
+
+

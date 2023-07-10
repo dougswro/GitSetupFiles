@@ -1,4 +1,7 @@
 *.deb
 *.so
 .ssh/
-.SECRET/ 
+.SECRET/
+.backups/ 
+.gitignore~
+./Dot Files/.vim/plugged/ale/

@@ -1,0 +1,10 @@
+sudo HandBrakeCLI --preset-import-gui -i file.ext -o file cat
+test cat
+mogrify --auto-orient -format jpg ./*.webp cat
+find . -name *.json -exec rm -r {} \;  cat
+to addend a file with stuff do: echo thing cat >> file cat
+fdupes -rd (N) [directory]   this finds duplicated (and auto removes)
+echo thing > cat >> ~/Code/ref...     this cats to file as ADDENDUM
+sudo chmod -R --reference=Videos/ Music/
+novos --cli   this is the sonos cli tool
+mosquitto_[pub][sub] -h -p -u -P -m [-r][-n] using laptop/[control][etc]/[heater][etc]
