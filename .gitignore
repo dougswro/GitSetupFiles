@@ -3,3 +3,4 @@
 .ssh/
 .SECRET/
 .backups/ 
+.gitignore*
