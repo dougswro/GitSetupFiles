@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd /home/doug/Git_Setup_Files/
 git pull
 git add *
 git stage --all
