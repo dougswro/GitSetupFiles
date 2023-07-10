@@ -47,7 +47,7 @@ alias flatpack='flatpak'
 
 alias noson='flatpak run io.github.janbar.noson --cli'
 alias gitcom='git add * && git commit -a -m '
-alias gitp='./home/doug/git_update.sh'
+alias gitp='/bin/bash /home/doug/git_update.sh'
 
 export PATH=$PATH:/var/lib/flatpak/exports/bin
 
