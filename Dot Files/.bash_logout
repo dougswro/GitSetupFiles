@@ -1,0 +1,1 @@
+/home/doug/.bash_logout
