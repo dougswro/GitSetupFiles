@@ -1,4 +1,5 @@
 *.deb
 *.so
 .ssh/
-.SECRET/ 
+.SECRET/
+.backups/ 
