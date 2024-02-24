@@ -1,4 +1,0 @@
-# Unison preferences
-label = Sync Laptop and Phone
-root = /run/user/1000/gvfs/mtp:host=Google_Pixel_7_2A221FDH200AVP/Internal shared storage/Music
-root = /home/doug/Music

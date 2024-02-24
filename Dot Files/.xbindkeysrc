@@ -25,15 +25,17 @@
 	b:7
 
 # mouse MIDDLE click
-"xdotool key 'F3'"
+#"xdotool key 'F3'"
        b:2
+
 
 # mouse SIDE button up
 "xdotool key 'Control_L+w'"
 	b:9
 
 #mouse SIDE button down 
-#	b:8
+"xdotool key 'shiftAlt_L+]'"
+                  b:8
 	
 #
 # A list of keys is in /usr/include/X11/keysym.h and in
@@ -87,3 +89,28 @@
 ##################################
 # End of xbindkeys configuration #
 ##################################
+#       $HOME/.xbindkeysrc
+ #              The users configuration file.
+#
+
+ #      $HOME/.xbindkeysrc.scm
+  #             The users configuration file in scheme
+   #            (if guile support has not been disabled).
+
+#SEE ALSO
+ #      xbindkeys_show
+  #         Utility for showing the actual keybinding with xbindkeys
+   #    xmodmap(1x)
+  #         Utility for modifying keymap & button mappings in X.
+  #     xev(1x)
+  #         Print contents of X events.
+  #     /usr/include/X11/keysymdef.h
+  #         X11 KeySym definitions.
+
+
+#SEE ALSO
+#       X(7), xev(1), setxkbmap(1), XStringToKeysym(3), Xlib documentation on key and #pointer events
+
+#SEE ALSO
+#       xkbcomp(1), xkeyboard-config(7)
+
